@@ -27,7 +27,7 @@ public class UpdateStudentDemo {
             currentSession.getTransaction().commit();
 
             // NEW CODE
-            currentSession = sessionFactory.getCurrentSession();
+            currentSession = sessionFactory.getCurrentSession(); //после коммита обязательно получаем новую сессию
             currentSession.beginTransaction();
 
             // update email for all students

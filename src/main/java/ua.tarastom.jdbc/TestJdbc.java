@@ -5,7 +5,8 @@ import java.sql.DriverManager;
 
 public class TestJdbc {
     public static void main(String[] args) {
-        String jdbcUrl = "jdbc:mysql://localhost:3306/hb_student_tracker?useSSL=false&serverTimezone=UTC";
+        String db1 = "hb_student_tracker"; //схема БД + не забудь поменять название в hibernate.cfg.xml
+        String jdbcUrl = "jdbc:mysql://localhost:3306/" + db1 + "?useSSL=false&serverTimezone=UTC";
         String user = "hbstudent";
         String pass = "hbstudent";
 

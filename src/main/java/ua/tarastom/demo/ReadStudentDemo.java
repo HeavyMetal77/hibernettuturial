@@ -30,8 +30,5 @@ public class ReadStudentDemo {
         } finally {
             sessionFactory.close();
         }
-
-
     }
-
 }
